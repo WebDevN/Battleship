@@ -1,6 +1,8 @@
 let addedRowNumber = 3;
 let addedColumnNumber = 3;
 
+// Add-row function
+
 let addRow = document.getElementById("addRow");
 addRow.onclick = function () {
     if (addedRowNumber === 9) {
@@ -40,6 +42,8 @@ addRow.onclick = function () {
     addedRowNumber++;
 }
 
+// Add-column function
+
 let addColumn = document.getElementById("addColumn");
 addColumn.onclick = function () {
     if (addedColumnNumber === 9) {
@@ -69,6 +73,8 @@ addColumn.onclick = function () {
     addedColumnNumber++;
 }
 
+// State-of-game object
+
 let atSea = {
     numShips: 0,
     ships: [],
@@ -76,6 +82,8 @@ let atSea = {
     hits: 0,
     numSunk: 0
 }
+
+// Add-ship function
 
 let addShip = document.getElementById("addShip");
 addShip.onclick = function () {
@@ -143,6 +151,8 @@ let missed = document.getElementById("misses");
 let hit = document.getElementById("hits");
 let shipsLeft = document.getElementById("shipsLeft");
 
+// Press-Enter function
+
 let shoot = document.getElementById("shoot");
 shoot.onclick = textShot;
 document.onkeydown = function () {
@@ -150,6 +160,9 @@ document.onkeydown = function () {
         textShot();
     }
 }
+
+// Text-shot function
+
 function textShot() {
     removeInstructions();
     let input = document.getElementById("guess");
@@ -219,6 +232,8 @@ function textShot() {
     input.value = "";
 }
 
+// Click-shot function
+
 function clickShot(event) {
     removeInstructions();
 
@@ -271,12 +286,17 @@ function clickShot(event) {
 
 let instructions = document.getElementById("instructions");
 let instructionsRemoved = false;
+
+// Remove-instructions function
+
 function removeInstructions() {
     if (!instructionsRemoved) {
         instructions.parentNode.removeChild(instructions);
         instructionsRemoved = true;
     }
 }
+
+// Is-sunk function
 
 function isSunk(list) {
     if (list[0] == "ouch" && list[1] == "ouch" && list[2] == "ouch") {
@@ -285,11 +305,15 @@ function isSunk(list) {
     return false;
 }
 
+// Sunk-background function
+
 function sunkBlue(list) {
     for (let i = 0; i < 3; i++) {
         document.getElementById(list[i]).style.backgroundColor = "darkblue";
     }
 }
+
+// Start-over function
 
 let reload = document.getElementById("reload");
 reload.onclick = function () {
