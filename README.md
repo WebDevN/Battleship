@@ -50,7 +50,7 @@ Of course the hardest part of coding this web app was the Javascript. And that i
 
 This book contains a walk-through of a similar project. To maximize my learning from the experience, instead of just reading and copying Head First's project, I took the idea and created it as best I knew how *before* going over Head First's code for the project. Then, after reading Head First's code involving a lot more functions and objects, I took my own code, improved it (still without copying anything from Head First's code) and extended the web app's functionality to be much more dynamic and self-explanatory than Head First's.
 
-## Suggested Improvements
+## Needed Improvement
 
 One minor bug (see lines 171 - 177 of .js file): the aim-shoot form *always* accepts the first two non-space characters such as "a2" as a valid input whether or not these characters are followed by other alphabetic or numeric characters. For example, inputs such as "  A11" or "b2kevenf  " would be accepted and equivalent to inputs "A1" and "B2" respectively. Therefore, some functionality is lost if the battle-zone is enlarged beyond 9 x 9. I coded 9 x 9 to be the maximum size, but this is obviously not a complete fix. 
 
