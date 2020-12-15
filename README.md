@@ -42,7 +42,7 @@ Whenever non-zero,
 3. number of ships left to sink,  
 4. number of ships already sunk,
 
-are displayed in the respective corners of the game board. 
+are displayed in the respective corners of the gameboard. 
 
 ## A Word About the Source
 
