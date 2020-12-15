@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="battleship.final.css">
+</head>
+
+<body>
+    <h1>Battleship</h1>
+    <div>
+        <p id="instructions">HOW TO PLAY: Size the sea to your preference and send forth as many hidden ships as you
+            can successfully meet in battle. Then begin guess-shooting using either the aim-shoot form or your mouse
+            cannon
+            to click the cells you think may be hiding part of an enemy battleship. Note that you can resize the sea
+            and/or send
+            forth more ships mid-battle. If you choose to add another ship after you have already made a shot or two
+            that
+            missed, the miss-colored cells will be turned light blue again but your total miss count will remain
+            unchanged. To stop the game and start over at any time, press the "Start Over" button. May ultimate victory
+            over the sea be yours!</p>
+    </div>
+
+    <h2>Fire when ready!</h2>
+    <section>
+        <label for="guess">Aim:</label>
+        <input id="guess" type="text" placeholder="B2" value=>
+        <button id="shoot">Shoot!</button>
+    </section>
+    <p id="shipsOn">There are no battleships at sea. Want to launch one?</p>
+    <table id="table">
+        <tbody id="tbody">
+            <tr class="borderRow">
+                <td><span id="misses">&nbsp;</span></td>
+                <td class="number"><span>1</span></td>
+                <td class="number"><span>2</span></td>
+                <td class="number"><span>3</span></td>
+                <td><span id="shipsSunk">&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td class="letter"><br>A</td>
+                <td id="00" class="gameBoard" onclick=clickShot(event)></td>
+                <td id="01" class="gameBoard" onclick=clickShot(event)></td>
+                <td id="02" class="gameBoard" onclick=clickShot(event)></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="letter"><br>B</td>
+                <td id="10" class="gameBoard" onclick=clickShot(event)></td>
+                <td id="11" class="gameBoard" onclick=clickShot(event)></td>
+                <td id="12" class="gameBoard" onclick=clickShot(event)></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="letter"><br>C</td>
+                <td id="20" class="gameBoard" onclick=clickShot(event)></td>
+                <td id="21" class="gameBoard" onclick=clickShot(event)></td>
+                <td id="22" class="gameBoard" onclick=clickShot(event)></td>
+                <td></td>
+            </tr>
+            <tr class="borderRow">
+                <td><span id="shipsLeft">&nbsp;</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span id="hits">&nbsp;</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        <button id="addRow">Add Row</button>
+        <button id="addColumn">Add Column</button>
+        <button id="addShip">Add Ship</button>
+        <button id="reload">Start Over</button>
+    </footer>
+</body>
+<script src="battleship.final.js"></script>
+
+</html>

@@ -1,0 +1,178 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8e9aaf;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: darkblue;
+}
+
+#instructions {
+    width: 400px;
+}
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(59, 69, 212);
+    font-size: 1em;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    border: 2px solid darkblue;
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: .8em;
+    font-weight: bold;
+    color: darkblue;
+    margin-top: 10px;
+}
+
+#guess {
+    height: 20px;
+    margin: 1px 10px 2px 5px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#shoot {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    color: red;
+}
+
+#table {
+    display: flex;
+    position: relative;
+    width: 375px;
+    background-color: #0077b6;
+    margin-top: 15px;
+}
+
+#tbody {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+}
+
+td {
+    height: 75px;
+    width: 75px;
+    border: 1px solid rgb(21, 167, 21);
+    box-sizing: border-box;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+}
+
+.gameBoard {
+    background-color: lightblue; 
+}
+
+
+.borderRow {
+    position: relative;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    font-size: large;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+.letter {
+    text-align: right;
+    font-size: large;
+    color: white;
+}
+
+#shipsOn {
+    font-family: 'Press Start 2P', cursive;
+    color: navy;
+    font-size: small;
+}
+
+.ship {
+    background-color: yellow;
+    background-image: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+#addRow, #addShip {
+    margin: 5px;
+    width: 100px;
+    height: 50px;
+    font-family: 'Press Start 2P', cursive;
+    color: darkblue;
+    font-size: medium;
+}
+
+#addColumn {
+    margin:5px;
+    width: 120px;
+    height: 50px;
+    font-family: 'Press Start 2P', cursive;
+    color: darkblue;
+    font-size: medium;
+}
+
+#reload {
+    margin: 5px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Press Start 2P', cursive;
+    color: darkgreen;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#table1 {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    background-color: #0077b6;
+    margin-top: 15px;
+}
+
+#misses {
+    font-size: large;
+    color: white;
+    top: 0;
+}
+
+#hits {
+    display: bottom;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#shipsLeft {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#shipsSunk {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
