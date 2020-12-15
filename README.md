@@ -20,7 +20,7 @@ To run this web app, place all its files in a dedicated folder on your PC and th
 
 ## Scope of Functionality
 
-![Game start-up page] (whenOpened.jpg)
+![Screenshot](https://github.com/WebDevN/Battleship/blob/trunk/whenOpened.jpg)
 
 As soon as the page loads, a "HOW TO PLAY" paragraph appears under the primary title. This paragraph is removed upon any user initiation of game-play. 
 
