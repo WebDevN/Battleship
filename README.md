@@ -40,7 +40,8 @@ Whenever non-zero,
 1. hit count, 
 2. miss count, 
 3. number of ships left to sink,  
-4. number of ships already sunk, 
+4. number of ships already sunk,
+
 are displayed in the respective corners of the game board. 
 
 ## A Word About the Source
